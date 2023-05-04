@@ -43,102 +43,6 @@ address {
   /* border-bottom: 1px solid var(--header-line-color); */
   padding: 24px 16px 12px 16px;
 }
-/* .navigate {
-  display: flex;
-  align-items: center;
-} */
-/* .navigate.lists {
-  height: 80px;
-  padding-bottom: 32px;
-} */
-/* .lists li:not(:last-child) {
-  margin-right: 50px;
-} */
-
-/* .nav__logo {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  margin-right: 93px;
-  /* padding-top: 24px;
-  padding-bottom: 25px; 
-  
-} */
-
-/* .nav__link {
-  display: block;
-  padding: 32px 0;
-  margin-top: 32px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-font-color);
-  transition: color var(--animation);
-  text-decoration: none;
-  cursor: pointer;
-}
-.navigate.list.lists {
-  max-width: 294px;
-} */
-/* .contacts {
-  display: flex;
-  margin-left: auto;
-  justify-content: center;
-  padding: 32px 0;
-/* }
-.contacts__item {
-  fill: currentColor;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--navigate-contacts-color);
-  transition: color, var(--animation);
-}
-.contacts__first {
-  margin-right: 50px;
-}
-
-.icon {
-  margin-right: 10px;
-}
-.contacts__tel {
-  width: 10px;
-  height: 16px;
-} 
-.contacts__email {
-  width: 16px;
-  height: 12px;
-}
-.contacts__item:hover,
-.nav__link:hover,
-.contact__item:focus,
-.nav__link:focus {
-  color: var(--logo-first-part-color-blue);
-}
-.adres-contact a {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-.current {
-  color: var(--logo-first-part-color-blue);
-  position: relative;
-}
-.current::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-
-  width: 100%;
-  height: 4px;
-  background-color: var(--logo-first-part-color-blue);
-  top: 80px;
-  align-items: center;
-}
-/*========================================================================*/
 
 /* Main */
 /* Add service */
@@ -443,25 +347,6 @@ address {
   line-height: 1.71;
   color: var(--navigate-contacts-color);
 }
-
-/* ====================================================================================================== */
-/* Benefits */
-
-.benefits__svg {
-  width: 270px;
-  height: 120px;
-  margin-bottom: 30px;
-  background-color: var(--background-btn-color);
-  background-size: 270px 120px;
-  padding: 25px 100px;
-}
-
-/* .benefits__items li:not(.last) {
-  margin-right: 30px;
-} */
-/* .benefits__items li {
-  width: 270px;
-} */
 
 /* Activity */
 section.activity {
@@ -814,7 +699,6 @@ section.activity {
 }
 .f-form__title {
   display: flex;
-  justify-content: center;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
@@ -950,6 +834,9 @@ a {
 }
 
 @media screen and (max-width: 428px) {
+  .benefits__svg {
+    display: none;
+  }
   .container {
     /* 
     text-align: center; */
@@ -1042,12 +929,15 @@ height: 72px; */
     color: #e7e9fc;
     padding-bottom: 72px;
   }
+  .f-form__title {
+    justify-content: center;
+  }
 }
 ul {
   padding-left: initial;
 }
 
-@media screen and (min-width: 429px) {
+@media screen and (min-width: 429px) and (max-width: 728p) {
   .container {
     /* text-align: center; */
 
@@ -1223,6 +1113,9 @@ ul {
   .benefits__items:not(.last) {
     padding-right: 24px;
   }
+  .benefits__svg {
+    display: none;
+  }
   .team__title {
     padding-bottom: 72px;
   }
@@ -1239,7 +1132,8 @@ ul {
     margin-bottom: 64px;
   }
   .section.clients {
-    padding-left: 16px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   .clients__link {
     width: 168px;
@@ -1269,8 +1163,129 @@ ul {
   }
   .f-form {
     display: flex;
-
+    align-items: center;
     width: 453px;
     margin: 0px 207px 0px 108px;
+  }
+  .f-form__label {
+    padding-right: 24px;
+  }
+  .footer__btn {
+    padding-top: 7px;
+  }
+  .f-form__input {
+    width: 264px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .navigate {
+    display: flex;
+    align-items: center;
+  }
+  /* .navigate.lists {
+    /* height: 80px; */
+
+  .lists li:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .nav__logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    margin-right: 93px;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 32px 0;
+    margin-top: 32px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-font-color);
+    transition: color var(--animation);
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .navigate.list.lists {
+    max-width: 294px;
+  }
+  .contacts {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+  }
+  .contacts__item {
+    fill: currentColor;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--navigate-contacts-color);
+    transition: color, var(--animation);
+  }
+  .contacts__first {
+    margin-right: 50px;
+  }
+
+  .icon {
+    margin-right: 10px;
+  }
+  .contacts__tel {
+    width: 10px;
+    height: 16px;
+  }
+  .contacts__email {
+    width: 16px;
+    height: 12px;
+  }
+  .contacts__item:hover,
+  .nav__link:hover,
+  .contact__item:focus,
+  .nav__link:focus {
+    color: var(--logo-first-part-color-blue);
+  }
+  .adres-contact a {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  }
+  .current {
+    color: var(--logo-first-part-color-blue);
+    position: relative;
+  }
+  .current::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+
+    width: 100%;
+    height: 4px;
+    background-color: var(--logo-first-part-color-blue);
+    top: 80px;
+    align-items: center;
+  }
+  .benefits__svg {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--cloud-white-color);
+    background-size: 270px 120px;
+    padding: 25px 100px;
+  }
+  .benefits__items li {
+    margin-right: 24px;
+  }
+  .benefits__items li {
+    width: 270px;
+  }
+  .benefits.container {
+    padding: 120px 132px 120px 156px;
+  }
+  .benefits__list {
+    display: flex;
   }
 }
