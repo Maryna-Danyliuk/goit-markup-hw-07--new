@@ -871,6 +871,7 @@ a {
   .clients__item {
     padding-bottom: 72px;
     padding-right: 16px;
+    width: 170px;
   }
   .nav__logo.foot {
     display: flex;
@@ -898,13 +899,16 @@ height: 72px; */
   .section.activity {
     display: none;
   }
+  .f-socialmedia__tittle {
+    justify-content: center;
+  }
 }
 ul {
   padding-left: initial;
 }
 
 @media screen and (min-width: 429px) and (max-width: 728px) {
-  .container {
+  s .container {
     /* text-align: center; */
 
     margin-left: auto;
@@ -1081,6 +1085,11 @@ ul {
   }
   .benefits__svg {
     display: none;
+    background-color: yellow;
+  }
+  .benefits__icon {
+    display: none;
+    background-color: green;
   }
   .team__title {
     padding-bottom: 72px;
