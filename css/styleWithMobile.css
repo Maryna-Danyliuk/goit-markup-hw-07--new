@@ -1475,11 +1475,19 @@ justify-content: center; */
   height: 280px;
   width: 288px;
 }
+@media screen and (min-width: 768px) {
+  .portfolio__link {
+    height: 300px;
+    width: 356px;
+  }
+}
 @media screen and (min-width: 1158px) {
   .portfolio__link {
     display: block;
     position: relative;
     overflow: hidden;
+
+    width: 360px;
   }
 }
 
